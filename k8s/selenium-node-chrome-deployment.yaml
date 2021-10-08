@@ -43,7 +43,7 @@ spec:
           image: selenium/node-chrome:4.0.0
           env:
             - name: SE_NODE_MAX_SESSIONS
-              value: 5
+              value: "5"
             - name: SE_EVENT_BUS_HOST
               value: "selenium-event-bus"
             - name: SE_EVENT_BUS_PUBLISH_PORT
