@@ -48,7 +48,7 @@ spec:
     spec:
       containers:
         - name: selenium-event-bus
-          image: selenium/event-bus:4.0.0-rc-2-prerelease-20210908
+          image: selenium/event-bus:4.0.0
           ports:
             - containerPort: 4442
               protocol: TCP
@@ -99,7 +99,7 @@ spec:
     spec:
       containers:
         - name: selenium-sessions
-          image: selenium/sessions:4.0.0-rc-2-prerelease-20210908
+          image: selenium/sessions:4.0.0
           env:
             - name: SE_EVENT_BUS_HOST
               value: "selenium-event-bus"
@@ -152,7 +152,7 @@ spec:
     spec:
       containers:
         - name: selenium-session-queue
-          image: selenium/session-queue:4.0.0-rc-2-prerelease-20210908
+          image: selenium/session-queue:4.0.0
           env:
             - name: SE_EVENT_BUS_HOST
               value: "selenium-event-bus"
@@ -206,7 +206,7 @@ spec:
     spec:
       containers:
         - name: selenium-distributor
-          image: selenium/distributor:4.0.0-rc-2-prerelease-20210908
+          image: selenium/distributor:4.0.0
           env:
             - name: SE_EVENT_BUS_HOST
               value: "selenium-event-bus"
@@ -268,7 +268,7 @@ spec:
     spec:
       containers:
         - name: selenium-router
-          image: selenium/router:4.0.0-rc-2-prerelease-20210908
+          image: selenium/router:4.0.0
           env:
             - name: SE_DISTRIBUTOR_HOST
               value: "selenium-distributor"
