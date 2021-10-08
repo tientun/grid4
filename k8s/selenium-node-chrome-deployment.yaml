@@ -27,7 +27,7 @@ metadata:
     name: selenium-chrome-node
     component: "selenium-grid-4"
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: selenium-chrome-node
